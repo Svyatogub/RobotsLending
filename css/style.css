@@ -56,8 +56,6 @@ nav button:hover{
     cursor: pointer;
     }
 
-
-
 .first_block {
     margin: 3% 5% 10% 0%;
     width: 85%;
@@ -92,7 +90,7 @@ nav button:hover{
 }
 .first_block_img {
     position: relative;
-    top: -68%;
+    /* top: -68%; */
     left: 70%;
     width: 45%;
 }
@@ -276,10 +274,17 @@ footer ul li a:hover{
     float: right;
 }
 
-
+@media screen and (min-width: 992px) {
+    .first_block_img {
+        top: -68%;
+    }
+}
 @media screen and (max-width: 991px) {
     nav button {
         width: 15%;
+    }
+    .first_block_img {
+        top: -68%;
     }
     .footer_left {
         margin-left: -8%;
@@ -476,8 +481,6 @@ footer ul li a:hover{
         margin: 0% 0% 0% -50%;
     }
     
-
-
     footer {
         display: flex;
         flex-direction: column;
@@ -524,5 +527,4 @@ footer ul li a:hover{
         margin-top: 1%;
         float: right;
     }
-    
 }
